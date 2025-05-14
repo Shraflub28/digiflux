@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiFlux - Solutions Digitales</title>
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="pictures/Untitled12_20250513220641.png" sizes="192x192">
+    <link rel="icon" href="pictures/Untitled12_20250513220641.png" sizes="128x128">
+    <link rel="icon" href="pictures/Untitled12_20250513220641.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="pictures/Untitled12_20250513220641.png" sizes="192x192">
+    <meta name="msapplication-TileImage" content="pictures/Untitled12_20250513220641.png">
+    <meta name="msapplication-TileColor" content="#8B5A2B">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="pictures/Untitled12_20250513220641.png" as="image">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- FontAwesome optimized loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Critical render path optimization -->
+    <meta name="description" content="DigiFlux is a full-service digital agency dedicated to empowering businesses to thrive in the digital landscape through innovative solutions.">
+    <meta name="theme-color" content="#8B5A2B">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Add DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="i18n.changeLanguage('fr')" class="lang-btn" data-lang="fr">FR</button>
+        <button onclick="i18n.changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        <button onclick="i18n.changeLanguage('ar')" class="lang-btn" data-lang="ar">عربي</button>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>Digi<span class="highlight-text">Flux</span></h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="#about" data-i18n="nav_about">À Propos</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#approach" data-i18n="nav_approach">Notre Approche</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="#contact" class="btn-primary consultation-btn" data-i18n="nav_get_started">Commencer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="animated-bg">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="floating-elements">
+                    <div class="float-item" data-speed="0.3">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="float-item" data-speed="0.5">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="float-item" data-speed="0.7">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-grid container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="split-heading">
+                            <span class="text-reveal" data-i18n="hero_title">Transforming</span>
+                            <span class="gradient-text text-reveal" data-i18n="hero_subtitle">Digital Presence</span>
+                        </h1>
+                        <h2 class="text-reveal" data-i18n="hero_description">Driving Business Growth in the Digital Age</h2>
+                        <p class="text-reveal" data-i18n="hero_text">Your full-service digital agency dedicated to empowering businesses to thrive in the ever-evolving digital landscape through innovative solutions.</p>
+                        <div class="cta-group text-reveal">
+                            <a href="#services" class="btn-primary" data-i18n="hero_explore">Explorer Nos Services</a>
+                            <a href="#contact" class="btn-secondary consultation-btn" data-i18n="hero_get_started">Commencer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="cube-wrapper">
+                        <div class="cube">
+                            <div class="cube-face front"><i class="fas fa-laptop-code"></i></div>
+                            <div class="cube-face back"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="cube-face right"><i class="fas fa-palette"></i></div>
+                            <div class="cube-face left"><i class="fas fa-chart-bar"></i></div>
+                            <div class="cube-face top"><i class="fas fa-rocket"></i></div>
+                            <div class="cube-face bottom"><i class="fas fa-cogs"></i></div>
+                        </div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">45+</span>
+                            <span class="stat-label" data-i18n="stats_projects">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-i18n="stats_satisfaction">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label" data-i18n="stats_experience">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about diagonal-section">
+            <div class="container">
+                <h2 class="section-title"><span data-i18n="about_title">About</span> <span class="highlight-text" data-i18n="about_subtitle">Us</span></h2>
+                <div class="about-content centered">
+                    <div class="about-text">
+                        <p data-i18n="about_description">DigiFlux is a full-service digital agency dedicated to empowering businesses to thrive in the digital landscape. We combine creativity, technology, and strategic thinking to deliver comprehensive digital solutions that drive growth and enhance your online presence.</p>
+                        <h3><span data-i18n="about_mission">Our</span> <span class="highlight-text" data-i18n="about_mission_title">Mission</span></h3>
+                        <p data-i18n="about_mission_text">To accelerate business growth through innovative digital solutions and strategic online presence management, helping our clients stay ahead in the rapidly evolving digital world.</p>
+                        <div class="about-btn-container">
+                            <a href="#contact" class="btn-primary" data-i18n="about_contact">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="animated-bg">
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <div class="container">
+                <h2 class="section-title"><span data-i18n="services_title">Core</span> <span class="highlight-text" data-i18n="services_subtitle">Services</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 data-i18n="service_web_title">Website Development</h3>
+                        <ul>
+                            <li data-i18n="web_detail1">Custom website design and development</li>
+                            <li data-i18n="web_detail2">E-commerce solutions</li>
+                            <li data-i18n="web_detail3">Responsive and mobile-first designs</li>
+                            <li data-i18n="web_detail4">Content Management Systems (CMS)</li>
+                            <li data-i18n="web_detail5">Website maintenance and support</li>
+                            <li data-i18n="web_detail6">SEO-optimized web architecture</li>
+                        </ul>
+                        <div class="service-tag" data-i18n="service_tag_web">Web</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <h3 data-i18n="service_social_title">Social Media Management</h3>
+                        <ul>
+                            <li data-i18n="social_detail1">Instagram account management</li>
+                            <li data-i18n="social_detail2">Content creation and curation</li>
+                            <li data-i18n="social_detail3">Community engagement</li>
+                            <li data-i18n="social_detail4">Growth strategy implementation</li>
+                            <li data-i18n="social_detail5">Analytics and performance tracking</li>
+                            <li data-i18n="social_detail6">Multi-platform social media management</li>
+                            <li data-i18n="social_detail7">Hashtag strategy and optimization</li>
+                        </ul>
+                        <div class="service-tag" data-i18n="service_tag_social">Social</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 data-i18n="service_video_title">Video Production & Editing</h3>
+                        <ul>
+                            <li data-i18n="video_detail1">Professional video editing</li>
+                            <li data-i18n="video_detail2">Social media video content</li>
+                            <li data-i18n="video_detail3">Marketing videos and commercials</li>
+                            <li data-i18n="video_detail4">Product demonstrations</li>
+                            <li data-i18n="video_detail5">Corporate videos</li>
+                            <li data-i18n="video_detail6">Motion graphics and animations</li>
+                            <li data-i18n="video_detail7">Video optimization for different platforms</li>
+                        </ul>
+                        <div class="service-tag" data-i18n="service_tag_video">Video</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach" class="approach diagonal-section">
+            <div class="container">
+                <h2 class="section-title"><span data-i18n="approach_title">Our</span> <span class="highlight-text" data-i18n="approach_subtitle">Approach</span></h2>
+                <div class="approach-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-i18n="approach_step1_title">Analysis</h3>
+                            <p data-i18n="approach_step1_text">Understanding your business, goals, and target audience through comprehensive research and data analysis.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-i18n="approach_step2_title">Strategy</h3>
+                            <p data-i18n="approach_step2_text">Developing customized digital solutions tailored to your specific business needs and market position.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-i18n="approach_step3_title">Implementation</h3>
+                            <p data-i18n="approach_step3_text">Executing planned strategies with precision, attention to detail, and industry best practices.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-i18n="approach_step4_title">Monitoring</h3>
+                            <p data-i18n="approach_step4_text">Tracking performance and making data-driven adjustments to optimize results in real-time.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3 data-i18n="approach_step5_title">Optimization</h3>
+                            <p data-i18n="approach_step5_text">Continuous improvement based on results, feedback, and emerging trends in the digital landscape.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects diagonal-section">
+            <div class="container">
+                <h2 class="section-title"><span data-i18n="projects_title">Our</span> <span class="highlight-text" data-i18n="projects_subtitle">Projects</span></h2>
+                <p class="projects-intro" data-i18n="projects_intro">Take a look at some of our recent projects that demonstrate our expertise and creativity.</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/logo.jpg" alt="Cosamia Restaurant Logo" />
+                            <div class="project-overlay">
+                                <a href="https://shraflub28.github.io/cosamia/" target="_blank" class="btn-view-project" data-i18n="projects_view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Cosamia</h3>
+                            <p data-i18n="projects_cosamia_desc">A modern restaurant website with Italian-Moroccan fusion concept, featuring an elegant design, online menu, location information, and seamless ordering system.</p>
+                            <div class="project-tags">
+                                <span class="project-tag" data-i18n="service_tag_web">Web</span>
+                                <span class="project-tag">UI/UX</span>
+                                <span class="project-tag">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: #8B5A2B; display: flex; justify-content: center; align-items: center; height: 100%;">
+                                <svg width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="100" cy="100" r="95" fill="#8B5A2B" stroke="#f5f5dc" stroke-width="2"/>
+                                    <text x="100" y="70" font-family="serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#f5f5dc">BELDI</text>
+                                    <text x="100" y="100" font-family="serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#f5f5dc">FUSION</text>
+                                    <text x="100" y="130" font-family="serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#f5f5dc">KITCHEN</text>
+                                    <path d="M50,80 C75,55 125,55 150,80" stroke="#f5f5dc" stroke-width="2" fill="none"/>
+                                    <path d="M50,140 C75,165 125,165 150,140" stroke="#f5f5dc" stroke-width="2" fill="none"/>
+                                    <path d="M70,40 L80,50 L90,40" stroke="#f5f5dc" stroke-width="1.5" fill="none"/>
+                                    <path d="M110,40 L120,50 L130,40" stroke="#f5f5dc" stroke-width="1.5" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://shraflub28.github.io/beldi-fusion-kitchen/" target="_blank" class="btn-view-project" data-i18n="projects_view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Beldi Fusion Kitchen</h3>
+                            <p>A sophisticated restaurant website showcasing Moroccan cuisine with international influences, featuring an elegant interface, online ordering system, and captivating food gallery.</p>
+                            <div class="project-tags">
+                                <span class="project-tag" data-i18n="service_tag_web">Web</span>
+                                <span class="project-tag">Restaurant</span>
+                                <span class="project-tag">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: white; display: flex; justify-content: center; align-items: center; height: 100%;">
+                                <svg width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="100" cy="100" r="95" fill="black"/>
+                                    <text x="100" y="80" font-family="serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#d4af37">LITTLE</text>
+                                    <text x="100" y="110" font-family="serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#d4af37">ITALY</text>
+                                    <text x="100" y="135" font-family="serif" font-size="14" text-anchor="middle" fill="#d4af37">MARRAKECH</text>
+                                    <path d="M70,60 C80,50 120,50 130,60" stroke="#d4af37" stroke-width="2" fill="none"/>
+                                    <path d="M70,140 C80,150 120,150 130,140" stroke="#d4af37" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://shraflub28.github.io/littleitaly/" target="_blank" class="btn-view-project" data-i18n="projects_view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Little Italy Marrakech</h3>
+                            <p>An authentic Italian restaurant website showcasing traditional cuisine in the heart of Marrakech, with menu display, reservation system, and elegant visuals highlighting the dining experience.</p>
+                            <div class="project-tags">
+                                <span class="project-tag" data-i18n="service_tag_web">Web</span>
+                                <span class="project-tag">Restaurant</span>
+                                <span class="project-tag">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card hidden-project">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: white; display: flex; justify-content: center; align-items: center; height: 100%;">
+                                <svg width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="25" y="60" width="150" height="80" rx="10" fill="#1e88e5"/>
+                                    <text x="100" y="95" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="white">TWINS</text>
+                                    <text x="100" y="125" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">DELIVERY</text>
+                                    <path d="M50,60 L60,45 L70,60" stroke="white" stroke-width="3" fill="none"/>
+                                    <path d="M130,60 L140,45 L150,60" stroke="white" stroke-width="3" fill="none"/>
+                                    <path d="M40,140 C40,165 160,165 160,140" stroke="#1e88e5" stroke-width="3" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://shraflub28.github.io/twins-delivery" target="_blank" class="btn-view-project" data-i18n="projects_view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Twins Delivery</h3>
+                            <p>A food delivery platform connecting users with local restaurants, featuring real-time order tracking, restaurant listings, and a user-friendly mobile-optimized interface.</p>
+                            <div class="project-tags">
+                                <span class="project-tag" data-i18n="service_tag_web">Web</span>
+                                <span class="project-tag">Food Service</span>
+                                <span class="project-tag">UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card hidden-project">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="btn-view-project" data-i18n="projects_coming_soon">Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p data-i18n="projects_ecommerce_desc">A comprehensive e-commerce solution with inventory management, payment processing, and user-friendly interface designed for optimal conversion rates.</p>
+                            <div class="project-tags">
+                                <span class="project-tag" data-i18n="service_tag_web">Web</span>
+                                <span class="project-tag">E-commerce</span>
+                                <span class="project-tag">API</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card hidden-project">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="btn-view-project" data-i18n="projects_coming_soon">Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Photography Portfolio</h3>
+                            <p data-i18n="projects_photo_desc">A visually stunning portfolio website for a professional photographer, featuring image galleries, booking system, and client testimonials.</p>
+                            <div class="project-tags">
+                                <span class="project-tag" data-i18n="service_tag_web">Web</span>
+                                <span class="project-tag">Portfolio</span>
+                                <span class="project-tag">Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-more-container">
+                    <button id="view-more-projects" data-i18n="projects_view_more">View More Projects</button>
+                </div>
+                
+                <div class="view-less-container" style="display: none;">
+                    <button id="view-less-projects" data-i18n="projects_view_less">View Less Projects</button>
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="#contact" class="btn-primary consultation-btn" data-i18n="projects_discuss">Discuss Your Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="why-us">
+            <div class="animated-bg">
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <div class="container">
+                <h2 class="section-title"><span data-i18n="why_us_title">Why Choose</span> <span class="highlight-text" data-i18n="why_us_subtitle">DigiFlux</span>?</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <p data-i18n="feature_comprehensive">Comprehensive digital solutions under one roof</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <p data-i18n="feature_results">Results-driven approach with measurable outcomes</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <p data-i18n="feature_expertise">Industry expertise and extensive experience</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-code"></i>
+                        <p data-i18n="feature_technology">Cutting-edge technology and innovative tools</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <p data-i18n="feature_support">Dedicated support team available when you need us</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-pie"></i>
+                        <p data-i18n="feature_transparent">Transparent reporting and clear communication</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <p data-i18n="feature_success">Proven track record of success with satisfied clients</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bolt"></i>
+                        <p data-i18n="feature_turnaround">Fast turnaround times without sacrificing quality</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact diagonal-section">
+            <div class="container">
+                <h2 class="section-title"><span data-i18n="contact_title">Contact</span> <span class="highlight-text" data-i18n="contact_subtitle">Us</span></h2>
+                <div class="contact-unique">
+                    <div class="contact-intro">
+                        <h3><span class="accent-text" data-i18n="contact_intro">Let's Connect</span></h3>
+                        <p data-i18n="contact_subintro">Reach out through your preferred channel</p>
+                    </div>
+                    <div class="contact-button-wrapper">
+                        <a href="https://wa.me/+212751619712" class="contact-card whatsapp-card" target="_blank">
+                            <div class="card-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>WhatsApp</h4>
+                                <p data-i18n="contact_whatsapp">Chat with us directly</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://instagram.com/d.giflux" class="contact-card instagram-card" target="_blank">
+                            <div class="card-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Instagram</h4>
+                                <p data-i18n="contact_instagram">Follow our latest updates</p>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:digifluxgrow@gmail.com" class="contact-card email-card">
+                            <div class="card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Email</h4>
+                                <p data-i18n="contact_email">Send us a message</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Digi<span class="highlight-text">Flux</span></h2>
+                    <p data-i18n="footer_description">Transforming Digital Presence, Driving Business Growth. Your trusted partner for comprehensive digital solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h3 data-i18n="footer_quick_links">Quick Links</h3>
+                        <ul>
+                            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                            <li><a href="#about" data-i18n="nav_about">About</a></li>
+                            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                            <li><a href="#approach" data-i18n="nav_approach">Our Approach</a></li>
+                            <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h3 data-i18n="footer_services">Our Services</h3>
+                        <ul>
+                            <li><a href="#services" data-i18n="service_web_title">Website Development</a></li>
+                            <li><a href="#services" data-i18n="service_social_title">Social Media Management</a></li>
+                            <li><a href="#services" data-i18n="service_video_title">Video Production</a></li>
+                            <li><a href="#services">Digital Marketing</a></li>
+                            <li><a href="#services">Brand Strategy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2025 DigiFlux. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
